@@ -1,0 +1,7 @@
+CHIP MSB{
+	IN in[16];
+	OUT out;
+
+	PARTS:
+	Buffer(in=in[15], out=out);
+}

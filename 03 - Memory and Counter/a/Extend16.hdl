@@ -1,0 +1,23 @@
+CHIP Extend16{
+	IN in;
+	OUT out[16];
+
+	PARTS:
+    And(a=in, b=true, out=extend);
+    Buffer(in=extend, out=out[0]);
+    Buffer(in=extend, out=out[1]);
+    Buffer(in=extend, out=out[2]);
+    Buffer(in=extend, out=out[3]);
+    Buffer(in=extend, out=out[4]);
+    Buffer(in=extend, out=out[5]);
+    Buffer(in=extend, out=out[6]);
+    Buffer(in=extend, out=out[7]);
+    Buffer(in=extend, out=out[8]);
+    Buffer(in=extend, out=out[9]);
+    Buffer(in=extend, out=out[10]);
+    Buffer(in=extend, out=out[11]);
+    Buffer(in=extend, out=out[12]);
+    Buffer(in=extend, out=out[13]);
+    Buffer(in=extend, out=out[14]);
+    Buffer(in=extend, out=out[15]);
+}
